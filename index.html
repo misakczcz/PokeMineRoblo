@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>EduQuest Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <header>
+    <h1>EduQuest</h1>
+    <div class="status">
+      <span id="xp">XP: 0</span>
+      <span id="tokens">Tokens: 0</span>
+    </div>
+  </header>
+
+  <section id="menu">
+    <h2>Vyber quest</h2>
+    <div class="quest-list">
+
+      <button class="quest-btn" data-quest="math">
+        <img src="assets/obby_math.png" alt="" class="thumb">
+        <span>Upgrade Obydlí (Matika)</span>
+      </button>
+
+      <button class="quest-btn" data-quest="science">
+        <img src="assets/prism_science.png" alt="" class="thumb">
+        <span>Prism Beam (Science)</span>
+      </button>
+
+      <button class="quest-btn" data-quest="reading">
+        <img src="assets/creature_forest.png" alt="" class="thumb">
+        <span>Forest Lore (Reading)</span>
+      </button>
+
+    </div>
+  </section>
+
+  <section id="game" class="hidden">
+    <div id="quest-image"></div>
+    <div id="quest-text"></div>
+    <div id="answers"></div>
+    <button id="next-btn" class="hidden">Další</button>
+  </section>
+
+  <audio id="snd-correct" src="assets/correct.mp3"></audio>
+  <audio id="snd-reward" src="assets/reward.mp3"></audio>
+  <audio id="snd-questmaster" src="assets/questmaster.mp3"></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
